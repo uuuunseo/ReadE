@@ -11,7 +11,7 @@ import SwiftUI
 struct ReadEApp: App {
     var body: some Scene {
         WindowGroup {
-            SignInView()
+            SigninView()
         }
     }
 }
