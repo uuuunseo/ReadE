@@ -1,7 +1,7 @@
 import SwiftUI
 
 public struct ReadETextField: View {
-    var placeholder: String
+    let placeholder: String
     @Binding var text: String
 
     public init(
