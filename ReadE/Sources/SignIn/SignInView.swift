@@ -12,13 +12,13 @@ struct SignInView: View {
                     .foregroundStyle(Color("PrimaryColor"))
                 
                 VStack(spacing: 24) {
-                    inputField(
+                    InputField(
                         title: "이메일",
                         placeholder: "이메일을 입력해주세요.",
                         text: $email
                     )
                     
-                    inputField(
+                    InputField(
                         title: "비밀번호",
                         placeholder: "비밀번호를 입력해주세요.",
                         text: $password
@@ -61,22 +61,4 @@ struct SignInView: View {
         }
         .padding(.horizontal, 28)
     }
-
-    @ViewBuilder
-    func inputField(
-        title: String,
-        placeholder: String,
-        text: Binding<String>
-    ) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(title)
-                .font(.system(size: 16, weight: .bold))
-
-            ReadETextField(placeholder, text: text)
-        }
-    }
-}
-
-#Preview {
-    SignInView(email: "", password: "")
 }
