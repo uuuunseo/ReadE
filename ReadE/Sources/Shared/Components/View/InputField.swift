@@ -1,8 +1,8 @@
 import SwiftUI
 
 public struct InputField: View {
-    var title: String
-    var placeholder: String
+    let title: String
+    let placeholder: String
     @Binding var text: String
     
     public init(
