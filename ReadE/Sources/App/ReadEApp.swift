@@ -1,10 +1,3 @@
-//
-//  ReadEApp.swift
-//  ReadE
-//
-//  Created by 정윤서 on 2/23/25.
-//
-
 import SwiftUI
 
 @main

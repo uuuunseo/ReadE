@@ -1,10 +1,10 @@
 import SwiftUI
 
-struct SigninView: View {
+public struct SigninView: View {
     @State var email: String = ""
     @State var password: String = ""
 
-    var body: some View {
+    public var body: some View {
         NavigationStack {
             VStack(spacing: 60) {
                 VStack(spacing: 55) {
@@ -60,5 +60,6 @@ struct SigninView: View {
             }
             .padding(.horizontal, 28)
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
