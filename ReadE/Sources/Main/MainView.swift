@@ -54,7 +54,3 @@ struct MainView: View {
         .padding(.horizontal, 28)
     }
 }
-
-#Preview {
-    MainView(level: 0, name: "을사", page: 1900, total: 1999)
-}
